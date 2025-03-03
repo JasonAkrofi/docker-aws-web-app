@@ -93,36 +93,36 @@ Here are some screenshots of the project in action:
 ## 1. EC2 Dashboard
 ![Screenshot 2025-03-02 191604](https://github.com/user-attachments/assets/b0e8f2ca-019f-4884-9187-b677d2cfe432)
 
-## Web App Running on EC2
+## 2.Web App Running on EC2
 ![Screenshot 2025-03-02 191604](https://github.com/user-attachments/assets/b2bd248a-d848-4c31-87d0-61ea7d03747a)
 
-## 2. Project Structure
+## 3. Project Structure
 ![project folder](https://github.com/user-attachments/assets/abc82770-df32-4619-b5c5-cdaad2e420d7)
 
 
-## 3. Docker Image & Container
+## 4. Docker Image & Container
 
 ![docker image   container](https://github.com/user-attachments/assets/85fe3d87-88d5-4ea6-b50c-5613fd38b468)
 
 
 
-## 4. AWS ECR Repository
+## 5. AWS ECR Repository
 ![aws ecr repository](https://github.com/user-attachments/assets/ece13926-23f9-4b15-8aca-747fcabfd63a)
 
 
 
-## 5. Terraform Execution
+## 6. Terraform Execution
 
 ![terraform execution](https://github.com/user-attachments/assets/fdad914d-32a1-47a7-a315-3174ef067385)
 
 
 
-## 6. AWS EC2 Instance
+## 7. AWS EC2 Instance
 
 ![Screenshot 2025-03-02 191604](https://github.com/user-attachments/assets/73df3ca2-c896-4ace-b142-d841766648b3)
 
 
-## 7. Running Web App
+## 8. Running Web App
 
 ![web app](https://github.com/user-attachments/assets/7b2f57b1-b8a6-4af2-8630-ab562f3ea313)
 
