@@ -88,7 +88,7 @@ terraform apply
 You’ll be prompted to confirm the actions Terraform will take. Type yes to proceed.
 
 
-Step 4: Access the Application
+### Step 4: Access the Application
 
 Once Terraform completes the deployment, it will output the public IP of the EC2 instance. Use this IP to access the web application in your browser. For example:
 
