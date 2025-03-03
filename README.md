@@ -58,34 +58,57 @@ You should be able to access the web application at http://localhost on your bro
 
 Follow these steps to deploy the web application on AWS using Terraform.
 
-### Step 1: Initialize Terraform
-First, navigate to the directory containing the Terraform configuration files (main.tf and variables.tf) and initialize Terraform:
+### Step 1: Configure AWS Credentials
+Before running Terraform, ensure that AWS credentials are set up:
 ```bash
-terraform innit
+aws configure
+```
+Or, set environment variables:
+```bash
+export AWS_ACCESS_KEY_ID=your-access-key
+export AWS_SECRET_ACCESS_KEY=your-secret-key
+```
+
+### Step 2: Initialize Terraform
+
+First, navigate to the directory containing the Terraform configuration files (main.tf and variables.tf) and initialize Terraform:
+
+```bash
+terraform init
 ```
 
 
-### Step 2: Apply Terraform Configuration
-Run the following command to create the resources on AWS:
+### Step 3: Apply Terraform Configuration
 
+Run the following command to create the resources on AWS:
 ```bash
 terraform apply
-```
+```  
+
 You’ll be prompted to confirm the actions Terraform will take. Type yes to proceed.
 
-### Step 3: Access the Application
+
+Step 4: Access the Application
+
 Once Terraform completes the deployment, it will output the public IP of the EC2 instance. Use this IP to access the web application in your browser. For example:
 
 ```text
 http://<EC2_PUBLIC_IP>
-```  
+```
 --- 
-## Project Goal
-The objective of this project was to:
+## Security Best Practices
 
-- Learn how to containerize a web application with Docker.
-- Automate the provisioning of AWS resources using Terraform.
-- Understand how to deploy and manage web apps on AWS using EC2.
+- Use IAM Roles instead of hardcoded credentials.
+
+- Restrict Security Groups: Avoid opening all ports to the public.
+
+- Enable Logging & Monitoring: Use AWS CloudWatch for monitoring.
+
+
+
+
+
+
 ---
 ## Screenshots
 Here are some screenshots of the project in action:
@@ -133,7 +156,16 @@ Here are some screenshots of the project in action:
 ---
 ## Troubleshooting
 - EC2 Instance Not Starting: Ensure that the AMI ID is correct for the AWS region you are deploying to. You can verify the correct AMI ID in the AWS EC2 Console.
+
+- Terraform Authentication Issues: Ensure AWS credentials are properly configured (aws configure).
+
 - Docker Container Not Starting: Ensure Docker is correctly installed and running on your local machine.
+
+- Public IP Not Accessible: Check security group rules to allow HTTP (port 80) traffic.
+
+
+
+
 ---
 
 ## Resources
